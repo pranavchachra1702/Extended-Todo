@@ -1,63 +1,39 @@
-/* eslint-disable */
-// this is an auto generated file. This will be overwritten
 export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    createTodo(input: $input, condition: $condition) {
+  mutation CreateTodo($input: CreateTodoInput!) {
+    createTodo(input: $input) {
       id
       name
       description
       comments {
-          id
-          text
-          createdAt
+        id
+        text
+        createdAt
       }
     }
   }
 `;
 
 export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    updateTodo(input: $input, condition: $condition) {
+  mutation UpdateTodo($input: UpdateTodoInput!) {
+    updateTodo(input: $input) {
       id
       name
       description
       comments {
-          id
-          text
-          createdAt
-      }
-    }
-  }
-`;
-
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo($input: DeleteTodoInput!, $condition: ModelTodoConditionInput) {
-    deleteTodo(input: $input, condition: $condition) {
-      id
-      name
-      description
-      comments {
-          id
-          text
-          createdAt
+        id
+        text
+        createdAt
       }
     }
   }
 `;
 
 export const addComment = /* GraphQL */ `
-  mutation AddComment($input: CreateCommentInput!, $condition: ModelCommentConditionInput) {
-    createComment(input: $input, condition: $condition) {
+  mutation AddComment($input: CreateCommentInput!) {
+    addComment(input: $input) {
       id
       text
       createdAt
-      todoId
     }
   }
 `;
