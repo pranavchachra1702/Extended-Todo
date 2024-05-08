@@ -10,11 +10,9 @@ export const createTodo = /* GraphQL */ `
       name
       description
       comments {
-        items {
           id
           text
           createdAt
-        }
       }
     }
   }
@@ -30,11 +28,9 @@ export const updateTodo = /* GraphQL */ `
       name
       description
       comments {
-        items {
           id
           text
           createdAt
-        }
       }
     }
   }
@@ -47,11 +43,9 @@ export const deleteTodo = /* GraphQL */ `
       name
       description
       comments {
-        items {
           id
           text
           createdAt
-        }
       }
     }
   }

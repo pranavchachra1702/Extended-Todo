@@ -7,11 +7,9 @@ export const getTodo = /* GraphQL */ `
       name
       description
       comments {
-        items {
           id
           text
           createdAt
-        }
       }
     }
   }
@@ -29,11 +27,9 @@ export const listTodos = /* GraphQL */ `
         name
         description
         comments {
-          items {
             id
             text
             createdAt
-          }
         }
       }
       nextToken
