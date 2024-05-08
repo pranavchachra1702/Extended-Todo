@@ -157,7 +157,7 @@ const ToDoApp = () => {
       <Text style={styles.todoName}>{todo.name}</Text>
       <Text>{todo.description}</Text>
       <View>
-        {todo.comments.items.map(comment => (
+        {todo.comments.map(comment => (
           <Text key={comment.id} style={styles.comment}>{comment.text}</Text>
         ))}
       </View>
